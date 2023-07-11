@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string inputText = Console.ReadLine();
+		SearchForVowels(inputText);
+	}
+						  
+	static void SearchForVowels(string text)
+	{
+		int count = 0;
+		foreach (char vowel in text)
+		{
+			if ("aouei".Contains(vowel))
+				{
+					count++;
+				}
+		}
+		Console.WriteLine(count);		
+	}
+	
+}
